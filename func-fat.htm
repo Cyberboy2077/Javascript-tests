@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Função Fatorial</title>
+</head>
+<body>
+
+<h1>Lista de Frutas</h1>
+<ul id="lista-frutas">
+</ul>
+
+<script>
+var n, resultado;
+function fatorial(n){
+	var aux,fat ;
+	//inicio da função
+	aux = 1;
+	fat = 1;
+	while (aux <= n){
+		fat = fat * aux;
+		aux = aux + 1;
+	}
+	return(fat);
+}
+n = prompt("insira o valor");
+n = parseInt(n);
+resultado = fatorial(n);
+console.log("o resultado do fatorial é : " + resultado);
+</script>
+
+</body>
+</html>
